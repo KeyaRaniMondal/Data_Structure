@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 bool compareValue(pair<int, int> p1, pair<int, int> p2)
 {
     double v1 = (double)p1.first / p1.second;
@@ -21,7 +20,7 @@ int main()
 
     for (int i = 0; i < n; ++i)
     {
-        cout<<value_weight[i].first << value_weight[i].second;
+        cout<<"sorted in descending order :"<<value_weight[i].first <<" "<< value_weight[i].second<<endl;
     }
     int ans = 0;
     for (int i = 0; i < n; ++i)
@@ -37,5 +36,6 @@ int main()
         weight = 0;
         break;
     }
-    cout << ans << endl;
+    cout<<ans << endl;
 }
+
